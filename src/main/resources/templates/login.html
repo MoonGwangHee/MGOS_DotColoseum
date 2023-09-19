@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>MGOS-SignIn</title>
+  <link href="../css/login.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+
+
+
+
+<div class="login-container">
+
+  <img src="assets/img/Logo_With_NoBg.png" alt="로고" class="logo">
+  <h2 class="login-title">MGOS Login</h2>
+  <form class="login-form" action="/login" method="post">
+
+
+
+
+      <div class="login-form input">
+
+
+
+        <label for="email">E-mail</label>
+
+        <input type="text" id="email" name="email" class="in" required><br>
+        <label for="password">Password</label>
+
+        <input type="password" id="password" name="password" class="in" required><br>
+
+
+
+        <button id="btn" type="submit">Submit</button>
+
+
+        <a class="login-form" type="text-small" href="#"><b>Forgot your E-mail</b></a>
+        <a class="login-form" type="text-small" href="#"><b>Sign Up</b></a>
+
+
+
+
+  </div>
+  </form>
+</div>
+</body>
+</html>

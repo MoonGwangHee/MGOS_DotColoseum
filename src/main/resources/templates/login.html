@@ -39,7 +39,17 @@
 
 
         <a class="login-form" type="text-small" href="#"><b>Forgot your E-mail</b></a>
-        <a class="login-form" type="text-small" href="#"><b>Sign Up</b></a>
+        <a class="login-form" type="text-small" id="gotoSignup"><b>Sign Up</b></a>
+
+        <script>
+          document.getElementById('gotoSignup').addEventListener('click', function () {
+            // 경고 메시지 표시
+            alert("회원가입을 진행하기 위하여 회원가입 페이지로 이동합니다.");
+
+            // 로그인 페이지 이동
+            window.location.href = "/signup";
+          });
+        </script>
 
 
 

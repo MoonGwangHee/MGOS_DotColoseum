@@ -20,4 +20,21 @@ public class LoginController {
             return "redirect:/login?error";
         }
     }
+
+    @GetMapping("/signup")
+    public String showCreateAccountPage() {
+        return "Signup";
+    }
+
+    @PostMapping("/signup")
+    public String signUp(String email, String password, String rePassword,  String name, String cellphone) {
+        // 프론트 개발을 위하여 테스트 코드 작성
+        
+        if("admin@naver.com".equals(email) && "password".equals(password) && "password".equals(rePassword) && "어드민".equals(name) && "111".equals(cellphone)) {
+            return "redirect:/index";
+        } else {
+            return "redirect:/signup?error";
+        }
+    }
+
 }

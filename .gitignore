@@ -12,6 +12,7 @@ Webgame/[Uu]serSettings/
 Webgame[Tt]emp/
 Webgame[Ll]ogs/
 Webgame[Oo]bj/
+Webgame[Bb]uild/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

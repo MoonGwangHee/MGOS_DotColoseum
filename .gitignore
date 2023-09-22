@@ -9,10 +9,10 @@ Webgame/[Ll]ibrary/
 Webgame/[Pp]rojectSettings/
 Webgame/[Pp]ackages/
 Webgame/[Uu]serSettings/
-Webgame[Tt]emp/
-Webgame[Ll]ogs/
-Webgame[Oo]bj/
-Webgame[Bb]uild/
+Webgame/[Tt]emp/
+Webgame/[Ll]ogs/
+Webgame/[Oo]bj/
+Webgame/[Bb]uild/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

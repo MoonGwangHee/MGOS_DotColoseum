@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>MGOS-SignUp</title>
@@ -9,23 +9,22 @@
     <div class="signUp-container">
         <img src="assets/img/Logo_With_NoBg.png" alt="로고" class="logo">
         <h2 class="signUp-title">Dot Coloseum Create Account</h2>
+
+
         <form class="signUp-form" action="/signup" method="post">
             <div class="signup-form input">
 
                 <label for="email">E-mail</label>
                 <input type="text" id="email" name="email" class="in" required><br>
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="in" required><br>
-
-                <label for="rePassword">Reconfirm Password</label>
-                <input type="password" id="rePassword" name="rePassword" class="in" required><br>
+                <label for="pwd">Password</label>
+                <input type="text" id="pwd" name="pwd" class="in" required><br>
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" class="in" required><br>
 
-                <label for="cellphone">C.P (Cell Phone) ['-' 포함 X]</label>
-                <input type="text" id="cellphone" name="cellphone" class="in" required><br>
+                <label for="cp">C.P (Cell Phone) ['-' 포함 X]</label>
+                <input type="text" id="cp" name="cp" class="in" required><br>
 
                 <button id="btn" type="submit" href="index">Submit</button>
             </div>

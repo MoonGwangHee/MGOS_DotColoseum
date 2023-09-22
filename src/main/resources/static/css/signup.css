@@ -71,7 +71,8 @@ a {
 
 /* 회원가입 폼 입력 필드 스타일 */
 .signUp-form input[type="text"],
-.signUp-form input[type="password"] {
+.signUp-form input[type="email"],
+.signUp-form input[type="pwd"] {
     margin: 10px 0;
     padding: 10px;
     border: 3px solid #ccc;

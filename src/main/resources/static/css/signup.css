@@ -118,6 +118,12 @@ a {
     text-decoration: underline;
 }
 
+/* 이메일 검증 */
+p , #emailError {
+    text-align: center;
+    color: #bb2d3b;
+
+}
 
 
 

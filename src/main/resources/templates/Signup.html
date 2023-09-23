@@ -15,7 +15,8 @@
             <div class="signup-form input">
 
                 <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" class="in" required><br>
+                <input type="text" id="email" name="email" class="in" onblur="checkEmail()" required><br>
+                <p id="emailError"></p>
 
                 <label for="pwd">Password</label>
                 <input type="text" id="pwd" name="pwd" class="in" required><br>
@@ -27,6 +28,22 @@
                 <input type="text" id="cp" name="cp" class="in" required><br>
 
                 <button id="btn" type="submit" href="index">Submit</button>
+
+                <script>
+                    function checkEmail() {
+                        var email = document.getElementById('email').value;
+                        fetch('/check-email?email=' + email)
+                            .then(response => response.text())
+                            .then(data => {
+                                if (data === '이미 사용중인 이메일입니다.') {
+                                    document.getElementById('emailError').textContent = data;
+                                } else {
+                                    document.getElementById('emailError').textContent = '사용 가능한 이메일 입니다!';
+                                }
+                            });
+                    }
+                </script>
+
             </div>
         </form>
     </div>

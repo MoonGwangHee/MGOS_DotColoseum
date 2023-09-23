@@ -9,4 +9,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     Member findByEmail(String email); // 이메일을 통한 user 조회
     
     List<Member> findAll(); // 전체 조회
+
+
+
 }

@@ -11,6 +11,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import webapp.mgos.domain.Member;
 import webapp.mgos.repository.MemberRepository;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 @Controller
 public class LoginController {
 
@@ -25,6 +28,10 @@ public class LoginController {
     /**
      * 로그인 관련 폼 & 메서드
      */
+
+    @Autowired
+    private HttpSession httpSession;
+
     
     @GetMapping("/login")
     public String showLoginPage() {
@@ -37,8 +44,10 @@ public class LoginController {
 
         if(member != null && passwordEncoder.matches(password, member.getPassword())) {
 
-            // 로그인 성공
-            return "redirect:/index";
+            // 로그인 성공 세션에 사용자 정보 저장
+            httpSession.setAttribute("user", email);
+            return "redirect:/game";
+
         } else {
 
             // 로그인 실패
@@ -49,6 +58,19 @@ public class LoginController {
             } else {
                 redirectAttributes.addFlashAttribute("loginError", "비밀번호가 올바르지 않습니다.");
             }
+        }
+        return "redirect:/login";
+    }
+
+
+    // 로그아웃
+    @PostMapping("/logout")
+    public String logout(HttpServletRequest request) {
+        // 세션을 삭제
+        HttpSession session = request.getSession(false);
+        // 세션이 null 이 아니라면, session.invalidate() 로 세션 삭제
+        if(session != null) {
+            session.invalidate();
         }
         return "redirect:/login";
     }
@@ -93,6 +115,24 @@ public class LoginController {
         return "redirect:/login";
         
     }
+
+
+    /**
+     * 게임 페이지 관련 메서드 & 폼
+     */
+
+    @GetMapping("/game")
+    public String gamePage(HttpServletRequest request) {
+        if(request.getSession().getAttribute("user") == null) {
+            // 로그인되지 않았으므로 로그인 페이지로 리다이렉트
+            return "redirect:/login";
+        }
+
+        // 로그인된 사용자만 게임 페이지로 이동할 수 있음
+         return "game";
+    }
+
+
 
 
     /**

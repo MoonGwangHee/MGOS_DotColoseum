@@ -1,0 +1,52 @@
+
+.container {  display: grid;
+    grid-template-columns: 0.2fr 2.1fr 0.7fr;
+    grid-template-rows: 0.5fr 2.1fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". Header ."
+    "sideB gameView sideA"
+    ". footer .";
+}
+
+.gameView {
+    text-align: center;
+    grid-area: gameView;
+
+}
+
+.sideA {
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    grid-area: sideA;
+    background-image: url(../assets/img/parchment.png);
+    background-size: cover;
+}
+
+.Header {
+    grid-area: Header;
+    text-align: center;
+    justify-self: start;
+    align-self: center;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.sideB { grid-area: sideB; }
+
+
+
+.img {
+    width: 310px;
+    height: 86px;
+}
+
+
+
+
+
+

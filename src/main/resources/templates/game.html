@@ -6,23 +6,44 @@
     <title>Unity WebGL Player | Webgame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link href="../css/game.css" rel="stylesheet" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/MGOS_Icon.png" />
   </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=720></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+  <body style="background-color: #404451">
+
+  <div class="container">
+
+    <div class="Header">
+      <img src="assets/img/Logo_With_NoBg.png" alt="MGOS_LOGO" />
+    </div>
+
+    <div class="sideA">
+      <h2>게임 부연 설명</h2>
+    </div>
+
+    <div class="gameView">
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width=980 height=720></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
         </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Webgame</div>
+        <div id="unity-warning"> </div>
       </div>
     </div>
+
+    <div class="footer">
+      <h3>푸터 입니다. 히히</h3>
+    </div>
+
+
+  </div>
+
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -93,7 +114,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
+        canvas.style.width = "980px";
         canvas.style.height = "720px";
       }
 

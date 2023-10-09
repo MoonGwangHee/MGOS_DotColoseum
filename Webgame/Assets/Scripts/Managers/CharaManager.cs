@@ -35,7 +35,7 @@ public class CharaManager : MonoBehaviour
     {
         if (instance == null) instance = this;
         else if (instance != null) return;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     void Update()
@@ -63,6 +63,14 @@ public class CharaManager : MonoBehaviour
 
         }
 
+    }
+
+    public void SendingPartyInfo()
+    {
+        PlayerPrefs.SetInt("Character1", (int)PlayerParty[0]);
+        PlayerPrefs.SetInt("Character2", (int)PlayerParty[1]);
+        PlayerPrefs.SetInt("Character3", (int)PlayerParty[2]);
+        PlayerPrefs.Save();
     }
 
     public void PartyCancel1()

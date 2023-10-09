@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager   instance;
-    public GameObject           Warning;
+    public GameObject           warning;
 
     IEnumerator SceneChangeDelay()
     {
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(SceneChangeDelay2());
         else
         {
-            Warning.SetActive(true);
+            warning.SetActive(true);
             Time.timeScale = 0;
         }
             

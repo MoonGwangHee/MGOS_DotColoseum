@@ -10,19 +10,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import webapp.mgos.domain.Member;
 import webapp.mgos.repository.MemberRepository;
+import webapp.mgos.service.MemberService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Controller
 public class LoginController {
 
     private final BCryptPasswordEncoder passwordEncoder;
+    private final MemberService memberService;
 
     @Autowired
-    public LoginController(BCryptPasswordEncoder passwordEncoder, MemberRepository memberRepository) {
+    public LoginController(BCryptPasswordEncoder passwordEncoder, MemberRepository memberRepository, MemberService memberService) {
         this.passwordEncoder = passwordEncoder;
         this.memberRepository = memberRepository;
+        this.memberService = memberService;
     }
 
     /**
@@ -97,12 +102,21 @@ public class LoginController {
 
     @PostMapping("/signup")
     public String signUp(Member member, RedirectAttributes redirectAttributes) {
+        String email = member.getEmail();
+        String password = member.getPassword();
 
         // 이메일 중복 확인
         Member existingEmail = memberRepository.findByEmail(member.getEmail());
+
+
         if(existingEmail != null) {
             redirectAttributes.addFlashAttribute("signupError", "이미 사용중인 이메일 입니다.");
             return "redirect:/signup";
+        }
+
+        // 계정 규칙 확인
+        if (!memberService.validateAccount(email, password)) {
+            return "redirect:/signup?error";
         }
 
         // 비밀번호 암호화
@@ -143,6 +157,7 @@ public class LoginController {
     public ResponseEntity<String> checkEmail(@RequestParam String email) {
         boolean isEmailExists = memberRepository.existsByEmail(email);
 
+
         if (isEmailExists) {
             return ResponseEntity.badRequest().body("이미 사용중인 이메일입니다.");
         } else {
@@ -151,3 +166,7 @@ public class LoginController {
     }
 
 }
+
+
+
+

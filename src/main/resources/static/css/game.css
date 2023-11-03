@@ -21,7 +21,7 @@
     text-align: center;
     grid-area: sideA;
     background-image: url(../assets/img/parchment.png);
-    background-size: cover;
+    object-fit: cover;
 }
 
 .Header {
@@ -29,6 +29,7 @@
     text-align: center;
     justify-self: start;
     align-self: center;
+    cursor: pointer;
 }
 
 .footer {
@@ -43,6 +44,13 @@
 .img {
     width: 310px;
     height: 86px;
+}
+
+#unity-canvas {
+    border: 5px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 

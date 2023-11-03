@@ -147,8 +147,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17335311}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -424.15}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -424.15018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -163,8 +163,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -85.59738}
-  m_SizeDelta: {x: -589.88, y: -569.00525}
+  m_AnchoredPosition: {x: 0.000061035156, y: -85.59674}
+  m_SizeDelta: {x: -589.8799, y: -569.00525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &17335314
 CanvasRenderer:
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f01a350e2df4f645a0396481c33872f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Warning: {fileID: 0}
+  warning: {fileID: 0}
 --- !u!1 &84315432
 GameObject:
   m_ObjectHideFlags: 0

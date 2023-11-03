@@ -10,7 +10,7 @@ public class CharacterStat : MonoBehaviour
     public int              def = 0;
     public int              agl = 0;
     public int              hp = 0;
-    public int              upgradeNum = 3;
+    public int              maxUpgrade = 3;
     public void Awake()
     {
         DefaultStatSetting();

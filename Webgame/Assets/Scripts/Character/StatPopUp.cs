@@ -30,17 +30,17 @@ public class StatPopUp : MonoBehaviour
     }
     private void UpdateText()
     {
-            statText1.text = "Level up Count: " + characterStat1.maxUpgrade.ToString() + "\n" +
+            statText1.text = "Level up: " + characterStat1.maxUpgrade.ToString() + "\n" +
                             "HP: " + characterStat1.hp.ToString() + "\n" +
                             "ATK: " + characterStat1.atk.ToString() +"\n" +
                             "DEF: " + characterStat1.def.ToString() +"\n" +
                             "AGL: " + characterStat1.agl.ToString();
-            statText2.text = "Level up Count: " + characterStat2.maxUpgrade.ToString() + "\n" +
+            statText2.text = "Level up: " + characterStat2.maxUpgrade.ToString() + "\n" +
                             "HP: " + characterStat2.hp.ToString() + "\n" +
                             "ATK: " + characterStat2.atk.ToString() + "\n" +
                             "DEF: " + characterStat2.def.ToString() + "\n" +
                             "AGL: " + characterStat2.agl.ToString();
-            statText3.text = "Level up Count: " + characterStat3.maxUpgrade.ToString() + "\n" +
+            statText3.text = "Level up: " + characterStat3.maxUpgrade.ToString() + "\n" +
                             "HP: " + characterStat3.hp.ToString() + "\n" +
                             "ATK: " + characterStat3.atk.ToString() + "\n" +
                             "DEF: " + characterStat3.def.ToString() + "\n" +

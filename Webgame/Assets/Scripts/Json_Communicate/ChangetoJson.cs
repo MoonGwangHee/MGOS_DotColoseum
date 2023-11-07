@@ -2,35 +2,101 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using UnityEngine.Networking;
 
-public class PartyType : MonoBehaviour
-{
-    public CharacterType    CharaType1, CharaType2, CharaType3;
-    public int    hp1, atk1, def1, agl1;
-    public int    hp2, atk2, def2, agl2;
-    public int    hp3, atk3, def3, agl3;
-
-}
 
 public class ChangetoJson : MonoBehaviour
 {
-    CharacterStat first, second, third;
+    private const string serverEndpoint = "http://localhost:8080/api/saveGameData";
+
+    CharacterStat   _first, _second, _third;
+    GameObject      partyBox;
+    string          _partyName;
+
     private void Start()
     {
-        first = CharaManager.instance.first.GetComponent<CharacterStat>();
-        second = CharaManager.instance.second.GetComponent<CharacterStat>();
-        third = CharaManager.instance.third.GetComponent<CharacterStat>();
+        //세 파티원의 속성값 가져오기
+        _first = CharaManager.instance.first.GetComponent<CharacterStat>();
+        _second = CharaManager.instance.second.GetComponent<CharacterStat>();
+        _third = CharaManager.instance.third.GetComponent<CharacterStat>();
+
+        //게임오브젝트의 컴포넌트를 가져와서 그 컴포넌트 안의 파티 이름 가져오기
+        partyBox = GameObject.Find("SavingPartyName");
+        _partyName = partyBox.GetComponent<SavePartyName>().partyName;
+
 
         PartyType partyType = new PartyType()
         {
-            CharaType1 =    CharaManager.instance.PlayerParty[0],
-            hp1 =           first.hp,
-            atk1 =          first.atk,
-            def1 =          first.def,
-            agl1 =          first.agl
+            first = new PartyMem
+            {
+                CharaType = CharaManager.instance.PlayerParty[0],
+                hp = _first.hp,
+                atk = _first.atk,
+                def = _first.def,
+                agl = _first.agl
+            },
+            second = new PartyMem
+            {
+                CharaType = CharaManager.instance.PlayerParty[1],
+                hp = _second.hp,
+                atk = _second.atk,
+                def = _second.def,
+                agl = _second.agl
+            },
+            third = new PartyMem
+            {
+                CharaType = CharaManager.instance.PlayerParty[2],
+                hp = _third.hp,
+                atk = _third.atk,
+                def = _third.def,
+                agl = _third.agl
+            },
+            PartyName = _partyName
+
         };
 
-        string json = JsonUtility.ToJson(partyType);
-        print(json);
+        string jsonData = JsonUtility.ToJson(partyType);
+        StartCoroutine(SendingJson(jsonData));
     }
+    IEnumerator SendingJson(string jsonData)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Post(serverEndpoint, "POST"))
+        {
+                byte[] jsonToSend =     new System.Text.UTF8Encoding().GetBytes(jsonData);
+                www.uploadHandler =     (UploadHandler)new UploadHandlerRaw(jsonToSend);
+                www.downloadHandler =   (DownloadHandler)new DownloadHandlerBuffer();
+
+                www.SetRequestHeader("Content-Type", "application/json");
+
+                // 요청 보내기
+                yield return www.SendWebRequest();
+
+                // 응답 처리
+                if (www.result == UnityWebRequest.Result.Success)
+                {
+                    Debug.Log("GameData sent successfully");
+                }
+                else
+                {
+                    Debug.LogError("Error sending GameData: " + www.error);
+                }
+        }
+    }
+}
+
+[System.Serializable]
+public class PartyType
+{
+    public PartyMem first;
+    public PartyMem second;
+    public PartyMem third;
+
+    public string PartyName;
+}
+
+[System.Serializable]
+public class PartyMem
+{
+    public CharacterType CharaType;
+    public int hp, atk, def, agl;
 }

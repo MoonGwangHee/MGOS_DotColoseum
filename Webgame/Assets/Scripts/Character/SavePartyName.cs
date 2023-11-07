@@ -7,7 +7,6 @@ public class SavePartyName : MonoBehaviour
 {
     public InputField               userInputField; // Inspector 창에서 Input Field를 연결할 변수
     public string                   partyName; // 입력값을 저장할 변수
-    private static SavePartyName    instance;
 
     private void Awake()
     {

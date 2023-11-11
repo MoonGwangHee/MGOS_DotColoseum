@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 public class ChangetoJson : MonoBehaviour
 {
-    private const string serverEndpoint = "http://localhost:8080/api/saveGameData";
+    private const string serverEndpoint = "http://localhost:8080/api/getAllGameData";
 
     CharacterStat   _first, _second, _third;
     GameObject      partyBox;
@@ -24,12 +24,11 @@ public class ChangetoJson : MonoBehaviour
         partyBox = GameObject.Find("SavingPartyName");
         _partyName = partyBox.GetComponent<SavePartyName>().partyName;
 
-
-        PartyType partyType = new PartyType()
-        {
+            PartyType partyType = new PartyType()
+            {
             first = new PartyMem
             {
-                CharaType = CharaManager.instance.PlayerParty[0],
+                charaType = CharaManager.instance.PlayerParty[0],
                 hp = _first.hp,
                 atk = _first.atk,
                 def = _first.def,
@@ -37,7 +36,7 @@ public class ChangetoJson : MonoBehaviour
             },
             second = new PartyMem
             {
-                CharaType = CharaManager.instance.PlayerParty[1],
+                charaType = CharaManager.instance.PlayerParty[1],
                 hp = _second.hp,
                 atk = _second.atk,
                 def = _second.def,
@@ -45,17 +44,18 @@ public class ChangetoJson : MonoBehaviour
             },
             third = new PartyMem
             {
-                CharaType = CharaManager.instance.PlayerParty[2],
+                charaType = CharaManager.instance.PlayerParty[2],
                 hp = _third.hp,
                 atk = _third.atk,
                 def = _third.def,
                 agl = _third.agl
             },
-            PartyName = _partyName
+            partyName = _partyName
 
-        };
+            };
 
         string jsonData = JsonUtility.ToJson(partyType);
+        //print(jsonData);
         StartCoroutine(SendingJson(jsonData));
     }
     IEnumerator SendingJson(string jsonData)
@@ -91,12 +91,12 @@ public class PartyType
     public PartyMem second;
     public PartyMem third;
 
-    public string PartyName;
+    public string partyName;
 }
 
 [System.Serializable]
 public class PartyMem
 {
-    public CharacterType CharaType;
+    public CharacterType charaType;
     public int hp, atk, def, agl;
 }

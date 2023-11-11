@@ -13,9 +13,9 @@ public class StatPlus3 : StatPlus
             characterStat3.hp++;
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == null)
+                if (upgrade3[i] == null)
                 {
-                    upgrade1[i] = "hp";
+                    upgrade3[i] = "hp";
                     characterStat3.maxUpgrade--;
                     break;
                 }
@@ -29,10 +29,10 @@ public class StatPlus3 : StatPlus
         {
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == "hp")
+                if (upgrade3[i] == "hp")
                 {
                     characterStat3.hp--;
-                    upgrade1[i] = null;
+                    upgrade3[i] = null;
                     characterStat3.maxUpgrade++;
                     break;
                 }
@@ -47,9 +47,9 @@ public class StatPlus3 : StatPlus
             characterStat3.atk++;
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == null)
+                if (upgrade3[i] == null)
                 {
-                    upgrade1[i] = "atk";
+                    upgrade3[i] = "atk";
                     characterStat3.maxUpgrade--;
                     break;
                 }
@@ -63,10 +63,10 @@ public class StatPlus3 : StatPlus
         {
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == "atk")
+                if (upgrade3[i] == "atk")
                 {
                     characterStat3.atk--;
-                    upgrade1[i] = null;
+                    upgrade3[i] = null;
                     characterStat3.maxUpgrade++;
                     break;
                 }
@@ -81,9 +81,9 @@ public class StatPlus3 : StatPlus
             characterStat3.def++;
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == null)
+                if (upgrade3[i] == null)
                 {
-                    upgrade1[i] = "def";
+                    upgrade3[i] = "def";
                     characterStat3.maxUpgrade--;
                     break;
                 }
@@ -97,10 +97,10 @@ public class StatPlus3 : StatPlus
         {
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == "def")
+                if (upgrade3[i] == "def")
                 {
                     characterStat3.def--;
-                    upgrade1[i] = null;
+                    upgrade3[i] = null;
                     characterStat3.maxUpgrade++;
                     break;
                 }
@@ -115,9 +115,9 @@ public class StatPlus3 : StatPlus
             characterStat3.agl++;
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == null)
+                if (upgrade3[i] == null)
                 {
-                    upgrade1[i] = "agl";
+                    upgrade3[i] = "agl";
                     characterStat3.maxUpgrade--;
                     break;
                 }
@@ -131,10 +131,10 @@ public class StatPlus3 : StatPlus
         {
             for (int i = 0; i < 3; i++) //파티창 한명의 업그레이드 배열을 세번씩 돌림
             {
-                if (upgrade1[i] == "agl")
+                if (upgrade3[i] == "agl")
                 {
                     characterStat3.agl--;
-                    upgrade1[i] = null;
+                    upgrade3[i] = null;
                     characterStat3.maxUpgrade++;
                     break;
                 }

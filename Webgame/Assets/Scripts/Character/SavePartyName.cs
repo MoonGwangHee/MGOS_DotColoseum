@@ -15,6 +15,6 @@ public class SavePartyName : MonoBehaviour
 
     public void SaveInputText()
     {
-    partyName = userInputField.text;
+            partyName = userInputField.text;
     }
 }

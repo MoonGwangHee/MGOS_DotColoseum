@@ -6,66 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager   instance;
-    public GameObject           warning;
-    CharacterStat _first, _second, _third;
+    public static GameManager           instance;
+    public GameObject                   warning;
+    public CharacterPool                pool;
+
+    private void Awake()
+    {
+        // 이미 존재하는 경우 중복 생성을 방지
+        if (instance == null)
+        {
+            instance = this; // 자기 자신으로 설정
+            DontDestroyOnLoad(gameObject); // 씬 전환 시에도 유지되도록 설정
+        }
+        else
+        {
+            Destroy(gameObject); // 중복된 경우 파괴
+        }
+    }
 
     IEnumerator SceneChangeDelay()
     {
         yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.LoadScene("Choice");
+        SceneManager.LoadScene("Battle");
     }
 
     public void SceneChange()
     {
         StartCoroutine(SceneChangeDelay());
-    }
-
-    public void SceneChange2()
-    {
-        if (CharaManager.instance.PlayerParty[0] != CharacterType.Default &&
-           CharaManager.instance.PlayerParty[1] != CharacterType.Default &&
-           CharaManager.instance.PlayerParty[2] != CharacterType.Default)
-            StartCoroutine(SceneChangeDelay2());
-        else
-        {
-            warning.SetActive(true);
-            Time.timeScale = 0;
-        }
-            
-    }
-
-    IEnumerator SceneChangeDelay2()
-    {
-        yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.LoadScene("Status");
-    }
-
-    public void SceneChange3()
-    {
-        _first = CharaManager.instance.first.GetComponent<CharacterStat>();
-        _second = CharaManager.instance.second.GetComponent<CharacterStat>();
-        _third = CharaManager.instance.third.GetComponent<CharacterStat>();
-
-        if (_first.maxUpgrade == 0 && _second.maxUpgrade == 0 && _third.maxUpgrade == 0)
-            StartCoroutine(SceneChangeDelay3());
-        else
-        {
-            warning.SetActive(true);
-            Time.timeScale = 0;
-        }
-
-    }
-
-    public void SceneChange3Go()
-    {
-        StartCoroutine(SceneChangeDelay3());
-    }
-
-    IEnumerator SceneChangeDelay3()
-    {
-        yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.LoadScene("Enemy");
     }
 
     public void PauseBtn()

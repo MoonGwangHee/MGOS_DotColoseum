@@ -2,10 +2,6 @@ package webapp.mgos.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import webapp.mgos.domain.CharacterData;
-import webapp.mgos.domain.GameData;
-import webapp.mgos.repository.CharacterDataRepository;
-import webapp.mgos.repository.GameDataRepository;
 import webapp.mgos.request.CharacterDataRequest;
 import webapp.mgos.request.GameDataRequest;
 

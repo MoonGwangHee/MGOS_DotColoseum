@@ -6,17 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager           instance;
-    public GameObject                   warning;
-    public CharacterPool                pool;
-
+    public static GameManager instance;
     private void Awake()
     {
         // 이미 존재하는 경우 중복 생성을 방지
         if (instance == null)
         {
             instance = this; // 자기 자신으로 설정
-            DontDestroyOnLoad(gameObject); // 씬 전환 시에도 유지되도록 설정
         }
         else
         {
@@ -33,6 +29,24 @@ public class GameManager : MonoBehaviour
     public void SceneChange()
     {
         StartCoroutine(SceneChangeDelay());
+    }
+
+    IEnumerator SceneReturneDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        SceneManager.LoadScene("Start");
+    }
+
+    public void SceneReturn()
+    {
+        StartCoroutine(SceneReturneDelay());
+    }
+
+    public void RestartScene()
+    {
+        // 현재 씬의 인덱스를 가져와서 해당 씬을 다시 로드
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void PauseBtn()

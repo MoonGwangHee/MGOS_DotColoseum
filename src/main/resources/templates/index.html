@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/comment.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 
@@ -75,6 +76,9 @@
             <h2 class="section-heading text-uppercase">CHARACTERS</h2>
             <h3 class="section-subheading text-muted">Dot Raid 에 나오는 게임 캐릭터 입니다.</h3>
         </div>
+
+
+
         <div class="row">
 
             <div class="col-lg-4 col-sm-6 mb-4">
@@ -86,12 +90,9 @@
                     <img class="img-fluid" src="assets/img/characters/Mercenary.png" alt="용병" />
 
 
-                    <div class="character
-                            -caption">
-                        <div class="character
-                                -caption-heading">용병</div>
-                        <div class="character
-                                -caption-subheading text-muted">"성장을 위해.. 모험을 떠날꺼야..."</div>
+                    <div class="character-caption">
+                        <div class="character-caption-heading">Roman</div>
+                        <div class="character-caption-subheading text-muted">"내 힘으로는 무리야..."</div>
                     </div>
                 </div>
             </div>
@@ -101,39 +102,89 @@
 
 
                 <!-- Chracter Knight -->
-                <div class="character
-                        -item">
+                <div class="character-item">
 
                     <img class="img-fluid" src="assets/img/characters/Knight.png" alt="전사" />
 
-                    <div class="character
-                            -caption">
-                        <div class="character
-                                -caption-heading">전사</div>
-                        <div class="character
-                                -caption-subheading text-muted">"내 칼은 무디지 않아."</div>
+                    <div class="character-caption">
+                        <div class="character-caption-heading">Aron</div>
+                        <div class="character-caption-subheading text-muted">"나보다 강한 놈은 내 앞으로 오게나"</div>
                     </div>
                 </div>
             </div>
+
+
+
             <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
 
 
                 <!-- Chracter Mage -->
-                <div class="character
-                        -item">
+                <div class="character-item">
 
                     <img class="img-fluid" src="assets/img/characters/Mage.png" alt="마법사" />
 
-                    <div class="character
-                            -caption">
-                        <div class="character
-                                -caption-heading">마법사</div>
-                        <div class="character
-                                -caption-subheading text-muted">"당장 너의 시력을 잃어버리게 만들수도 있는데.."</div>
+                    <div class="character-caption">
+                        <div class="character-caption-heading">예언가 Grandma</div>
+                        <div class="character-caption-subheading text-muted">"자네... 데스 브링어라는 고대 신을 아는가..?"</div>
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+
+
+                <!-- Chracter Null -->
+                <div class="character-item">
+
+                    <div class="character-caption">
+                        <div class="character-caption-heading"></div>
+                        <div class="character-caption-subheading text-muted"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <!-- Chracter Hero -->
+                <div class="character-item">
+
+                    <img class="img-fluid" src="assets/img/characters/Knight_NBG.png" alt="주인공" />
+
+                    <div class="character-caption">
+                        <div class="character-caption-heading">Rebecca</div>
+                        <div class="character-caption-subheading text-muted">"엘든 가르드의 영광을 위하여..!"</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+
+
+                <!-- Chracter Null -->
+                <div class="character-item">
+
+
+                    <div class="character-caption">
+                        <div class="character-caption-heading"></div>
+                        <div class="character-caption-subheading text-muted"></div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
+        </div>
+
+
+
     </div>
 </section>
 
@@ -238,8 +289,26 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
             <h3 class="section-subheading text-muted"><b>게임 오류 및 서버 문제가 생기면 연락주세요.</b></h3>
+
+            <ul class="comment">
+                <li class="comment-form">
+                    <form id="commentForm">
+                        <span class="txt-box">
+                            <input type="text" placeholder="댓글 내용을 입력해주세요." class="content" />
+                        </span>
+                        <input type="submit" class="btn-content" value="등록" />
+                    </form>
+                </li>
+
+
+                <!-- Comment List -->
+                <ul class="comment-list" id="comment-list"></ul>
+                    <!-- 댓글이 동적으로 추가댐-->
+            </ul>
+
         </div>
     </div>
+
 </section>
 <!-- Footer-->
 <footer class="footer py-4">

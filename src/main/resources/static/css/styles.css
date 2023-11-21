@@ -667,16 +667,21 @@ progress {
     max-width: 1320px;
   }
 }
+
+
+
 .row {
   --bs-gutter-x: 1rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: space-around;
 }
+
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -689,6 +694,7 @@ progress {
 .col {
   flex: 1 0 0%;
 }
+
 
 .row-cols-auto > * {
   flex: 0 0 auto;
@@ -10993,6 +10999,8 @@ header.masthead .masthead-heading {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
+  width: 400px;
+  height: 400px;
 }
 #character
 .character
@@ -11354,3 +11362,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+

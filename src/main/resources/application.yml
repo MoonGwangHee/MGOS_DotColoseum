@@ -9,6 +9,8 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+        hbm2ddl:
+          auto: update
 
 logging:
   level:
@@ -17,3 +19,12 @@ logging:
         type:
           descriptor:
             sql: trace
+
+
+thymeleaf:
+  prefix=classpath: templates/
+  suffix: .html
+  check-template-location: true
+  cache: false
+mvc:
+  static-path-pattern: "/static/**"

@@ -20,4 +20,18 @@ public class CommentController {
         this.commentService = commentService;
     }
 
+    @PostMapping("/comments")
+    public String showComments(Model model) {
+        List<Comment> comments = commentService.getAllComments();
+        model.addAttribute("comments", comments);
+        return "comments";
+    }
+
+
+    @PostMapping("/add")
+    public String addContent(@ModelAttribute Comment comment) {
+        commentService.saveComment(comment);
+        return "redirect:/index";
+    }
+
 }

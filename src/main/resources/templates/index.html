@@ -292,9 +292,11 @@
 
             <ul class="comment">
                 <li class="comment-form">
-                    <form id="commentForm">
+                    <form id="commentForm" action="/api/comments/add" method="post">
                         <span class="txt-box">
-                            <input type="text" placeholder="댓글 내용을 입력해주세요." class="content" />
+                            <input type="hidden" id="author" name="author" value="익명" />
+                            <input type="text" placeholder="댓글 내용을 입력해주세요." class="content" id="content" name="content" required />
+                            <input type="hidden" id="createdAt" class="createdAt" name="createdAt"  />
                         </span>
                         <input type="submit" class="btn-content" value="등록" />
                     </form>

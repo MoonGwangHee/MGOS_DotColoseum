@@ -3,6 +3,7 @@ package webapp.mgos.domain;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -17,15 +18,12 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "author" , nullable = false)
     private String author;
 
-    @Column(nullable = false)
+    @Column(name = "content", nullable = false)
     private String content;
 
-
-    @Column(name = "created_at", nullable = false)
-    private LocalDateTime createdAt;
 
 
 }

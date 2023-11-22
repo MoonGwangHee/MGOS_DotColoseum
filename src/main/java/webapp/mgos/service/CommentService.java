@@ -19,7 +19,7 @@ public class CommentService {
 
 
     public List<Comment> getAllComments() {
-        return commentRepository.findAllByOrderByCreatedAtDesc();
+        return commentRepository.findAll();
     }
 
     public Comment saveComment(Comment comment) {

@@ -208,13 +208,13 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/characters/RedSlime.png" alt="레드 슬라임" /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>Base Monster</h4>
-                        <h4 class="subheading">대충 슬라임 ㅇㅇ</h4>
+                        <h4 class="subheading">Red Slime</h4>
                     </div>
-                    <div class="timeline-body"><p class="text-muted">데스 브링어의 충직한 부하이자, 엘븐 가르드의 세상을 멸망 시키려는 악당입니다.</p></div>
+                    <div class="timeline-body"><p class="text-muted">데스 브링어의 충직한 부하이자, 엘븐 가르드의 세상을 멸망 시키려는 악당입니다. 레드 슬라임이 어떻게 공격할지는 아무도 모릅니다.</p></div>
                 </div>
             </li>
 
@@ -289,10 +289,8 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
             <h3 class="section-subheading text-muted"><b>게임 오류 및 서버 문제가 생기면 연락주세요.</b></h3>
-
             <ul class="comment">
-                <li class="comment-form">
-                    <form id="commentForm" action="/api/comments/add" method="post">
+                    <form class="comment-form" id="commentForm" action="/api/comments/add" method="post">
                         <span class="txt-box">
                             <input type="hidden" id="author" name="author" value="익명" />
                             <input type="text" placeholder="댓글 내용을 입력해주세요." class="content" id="content" name="content" required />
@@ -305,7 +303,43 @@
 
                 <!-- Comment List -->
                 <ul class="comment-list" id="comment-list"></ul>
-                    <!-- 댓글이 동적으로 추가댐-->
+
+                <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+                <script>
+                    // 페이지 로드 후 실행할 함수
+                    $(document).ready(function () {
+                        // 댓글을 가져와서 표시하는 함수
+                        function loadComments() {
+                            // AJAX를 이용하여 서버에서 댓글 목록을 가져 온다.
+                            $.ajax({
+                                url: '/api/comments',   // 실제 서버 엔드포인트
+                                type: 'GET',
+                                success: function (comments) {
+                                    var commentList = $('#comment-list');
+
+                                    // 기존 댓글 모두 지우고 새로 받아온 댓글로 대체한다.
+                                    commentList.empty();
+
+                                    // 댓글 목록을 순회하며 리스트에 추가
+                                    for (var i = 0; i < comments.length; i++) {
+                                        var comment = comments[i];
+                                        var listItem = $('<li>').text(comment.content); // 댓글 내용에 따라 변경
+
+                                        // 각 댓글을 리스트에 추가한다
+                                        commentList.append(listItem);
+                                    }
+                                },
+                                error: function () {
+                                    console.error('Failed to load comments.');
+                                }
+                            });
+                        }
+
+                        // 페이지 로드 시 댓글을 가져와서 표시한다.
+                        loadComments();
+                    });
+                </script>
             </ul>
 
         </div>

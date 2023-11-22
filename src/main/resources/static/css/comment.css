@@ -3,8 +3,7 @@
     padding: 0;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
 }
 
@@ -48,7 +47,7 @@ li {
     width: 85px;
 }
 
-.comment-form > form {
+.comment-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,9 +140,7 @@ li {
     color: #888; /* 작은 텍스트의 색상 */
 }
 
-.comment-list li:last-child {
-    margin-bottom: 0;
-}
+
 
 .comment-form {
     margin-top: 20px;

@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.*;
 import webapp.mgos.domain.Comment;
 import webapp.mgos.service.CommentService;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 
-@Controller
+@RestController
 @RequestMapping("/api/comments")
 public class CommentController {
     private final CommentService commentService;
@@ -29,9 +31,19 @@ public class CommentController {
 
 
     @PostMapping("/add")
-    public String addContent(@ModelAttribute Comment comment) {
+    public void addContent(@ModelAttribute Comment comment , HttpServletResponse response) {
         commentService.saveComment(comment);
-        return "redirect:/index";
+        String redirect_url="http://localhost:8080/index";
+        try {
+            response.sendRedirect(redirect_url);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @GetMapping
+    public List<Comment> getAllComments() {
+        return commentService.getAllComments();
     }
 
 }

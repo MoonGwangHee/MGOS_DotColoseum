@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     IEnumerator SceneReturneDelay()
     {
         yield return new WaitForSecondsRealtime(0.5f);
+        GameObject A = GameObject.Find("BGsound");
+        A.SetActive(false);
         SceneManager.LoadScene("Start");
     }
 

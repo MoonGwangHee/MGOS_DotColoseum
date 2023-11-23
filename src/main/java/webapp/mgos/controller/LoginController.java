@@ -114,11 +114,6 @@ public class LoginController {
             return "redirect:/signup";
         }
 
-        // 계정 규칙 확인
-        if (!memberService.validateAccount(email, password)) {
-            return "redirect:/signup?error";
-        }
-
         // 비밀번호 암호화
         String encodedPassword = passwordEncoder.encode(member.getPassword());
         member.setPassword(encodedPassword);

@@ -1,5 +1,5 @@
-# MGOS_DotColoseum
-MGOS's Game Project : Dot Coloseum (Web basement)
+# MGOS_DotRaid
+MGOS's Game Project : Dot Raid (Web basement)
 
 청운대학교 멀티미디어학과 20210238 , 20210039 - 문광희 , 오승현의 웹 기반 게임 프로젝트 입니다.
 

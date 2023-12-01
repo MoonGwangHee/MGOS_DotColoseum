@@ -36,3 +36,13 @@
 
 주요 기능들 
 
+
+- - - 
+
+## Assets used in Game Development
+
+<li>Slime Sprite : <a href="https://assetstore.unity.com/packages/2d/characters/slime-enemy-pixel-art-228568">Link</a></li>
+<li>DeathBringer Sprite : <a href="https://assetstore.unity.com/packages/2d/characters/bringer-of-death-free-195719">Link</a></li>
+<li>BackGround Image : <a href="https://assetstore.unity.com/packages/2d/textures-materials/red-cliff-background-147959">Link</a></li>
+<li>Ground TileMap & Objects : <a href="https://assetstore.unity.com/packages/2d/environments/pixel-art-platformer-village-props-166114">Link</a></li>
+<li>Plyaer Sprite : <a href="https://assetstore.unity.com/packages/2d/characters/warrior-free-asset-195707">Link</a></li>

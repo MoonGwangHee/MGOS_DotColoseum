@@ -15,11 +15,11 @@
 
 💪 Game Skillsets (Language & Tools)
 
-<b>Langaugae</b> <br>
-<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" /> 
+<b>Langaugae</b> <br> <br>
+<li><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" /> </li>
 
-<b>Tools</b>
-<img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
+<b>Tools</b> <br> <br>
+<li><img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" /> </li>
 
 
 

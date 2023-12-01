@@ -109,7 +109,7 @@
 - DB에 저장되어 있는 E-mail과 Password를 입력하면 계정에 접근이 가능합니다.
 - Sign Up 부분을 누르면 회원가입 창으로 이동할 수 있습니다.
 
-  <br> <br>
+<br> <br>
 |<center>회원가입 페이지</center>|
 |:------------------------:|
 |<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/8764e7f6-06ba-4790-b4bb-e482112d7ee2">|

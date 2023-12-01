@@ -39,7 +39,7 @@
 
 - - - 
 
-## Assets used in Game Development
+## Assets used in Game Development 🏭
 
 <li>Slime Sprite : <a href="https://assetstore.unity.com/packages/2d/characters/slime-enemy-pixel-art-228568">Link</a></li>
 <li>DeathBringer Sprite : <a href="https://assetstore.unity.com/packages/2d/characters/bringer-of-death-free-195719">Link</a></li>

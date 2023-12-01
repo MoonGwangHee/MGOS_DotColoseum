@@ -24,7 +24,7 @@
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 <br> <br>
 
-> <b>💪 Web Skillsets (Language & Tools ) </b>
+> <b>💪 Web Skillsets (Language & Tools ) </b> <br> <br>
 
 <b>Langaugae</b> <br> <br>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
@@ -34,7 +34,7 @@
 <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
 
-<br><br>
+<br>
 
 <b> Tools </b> <br> <br>
 <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" /> 

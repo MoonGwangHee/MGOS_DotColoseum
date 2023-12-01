@@ -90,7 +90,7 @@
 
 |<center>메인 페이지</center>|<center>로그인 페이지</center>|<center>회원가입 페이지</center>|<cetner>게임 페이지</center>
 |-------------------------:|----------------------------:|-----------------------------:|-----------------------------:|
-
+|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/959d1c78-47cf-4e49-9981-a92dae6a251a">|
 
 
 

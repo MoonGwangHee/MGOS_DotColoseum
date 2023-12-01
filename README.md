@@ -40,6 +40,7 @@
 
 <b> Tools 💊</b> <br> <br>
 <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" /> 
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
 <br>
 
 
@@ -75,16 +76,17 @@
 ## Web Project Summary 🚀
 <br>
 
-> 웹 게임 Dot Raid 에 등장하는 캐릭터 소개 및 보스 등장 몬스터 들의 소개가 제시 되어 있습니다. <br>
-> Dot Raid 관련 웹사이트와 게임 개발진에 대한 소개가 나열 되어 있습니다. <br>
-> 게임을 하기위하여 로그인 및 회원가입 페이지도 구성이 되어 있습니다.<br>
+> 1. 웹 게임 Dot Raid 에 등장하는 캐릭터 소개 및 보스 등장 몬스터 들의 소개가 제시 되어 있습니다. <br>
+> 2. Dot Raid 관련 웹사이트와 게임 개발진에 대한 소개가 나열 되어 있습니다. <br>
+> 3. 게임을 하기위하여 로그인 및 회원가입 페이지도 구성이 되어 있습니다.<br>
 
 
 - - -
 
 ## Main Function() 🌈
 
-주요 기능들 
+<br>
+
 
 
 - - - 

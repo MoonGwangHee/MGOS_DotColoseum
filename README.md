@@ -53,12 +53,17 @@
 <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 
+<br>
+
+<b>Design Tools 🎆</b> <br> <br>
+
+
 - - -
 
 ## Release 🧾
 
 <li>MGOS 사이트 : <a href="http://mgos-dot.com">http://mgos-dot.com</a></li>
-
+<img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" />
 
 - - -
 

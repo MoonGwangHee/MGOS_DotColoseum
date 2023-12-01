@@ -21,7 +21,7 @@
 
 ## Release 🧾
 
-> MGOS Site : http://mgos-dot.com
+>> MGOS Site : http://mgos-dot.com
 
 
 - - -

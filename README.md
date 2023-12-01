@@ -92,7 +92,12 @@
 |:------------------------:|
 |<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/959d1c78-47cf-4e49-9981-a92dae6a251a">|
 
+<br>
 
+- 게임 시작 버튼을 누르면, 게임 페이지로 이동합니다. (비로그인 상태일 경우, 게임 버튼을 누르면 alert()을 띄우며 Login Page 로 redirect)
+- 게임에 등장하는 캐릭터 및 몬스터와 보스 몬스터의 대한 정보가 제시되어 있습니다.
+- Dot Raid의 개발자 정보가 제시되어 있습니다.
+- Contact Us Section에 댓글 기능이 추가되어 있습니다. 
 
 
 

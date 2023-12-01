@@ -15,17 +15,17 @@
 
 > <b>💪 Game Skillsets (Language & Tools) </b>
 
-<b>Langaugae</b> <br> <br>
+<b>Langaugae 🔍</b> <br> <br>
 <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
 
-<b>Tools</b> <br> <br>
+<b>Tools 💊</b> <br> <br>
 <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
 <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" />
 <br> <br> <br> <br>
 
 > <b>💪 Web Skillsets (Language & Tools ) </b> <br> <br>
 
-<b>Langaugae</b> <br> <br>
+<b>Langaugae 🔍</b> <br> <br>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" /><br>
@@ -35,21 +35,21 @@
 
 <br>
 
-<b> Tools </b> <br> <br>
+<b> Tools 💊</b> <br> <br>
 <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" /> 
 
 
-<b> OS </b> <br><br>
+<b> OS 💻 </b> <br><br>
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 
 <br>
 
-<b> Server </b> <br> <br>
+<b> Server 💾</b> <br> <br>
 <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
 
 <br>
 
-<b>Communication Tools</b> <br> <br>
+<b>Communication Tools 📡</b> <br> <br>
 <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 

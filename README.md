@@ -5,12 +5,12 @@
 
 ## 목차 <br><br>
 
-1. Game Project Overview(#-Game-Project-Overview-📢)
-2. Skills(#-Skills-📚)
-3. Release(#-Release-🧾)
-4. Web Project Summary(#-Web-Project-Summary-🚀)
-5. Main Function()(#-Main-Function()-🌈)
-6. Assets used in Game Development(#-Assets-used-in-Game-Development-🏭)
+1. Game Project Overview(#-game-project-overview-📢)
+2. Skills(#-skills-📚)
+3. Release(#-release-🧾)
+4. Web Project Summary(#-web-project-summary-🚀)
+5. Main Function()(#-main-function()-🌈)
+6. Assets used in Game Development(#-assets-used-in-game-development-🏭)
 
 
 <br><br>

@@ -88,9 +88,14 @@
 <br>
 <b>Web Part 🕸️</b> <br>
 
-|<center>메인 페이지</center>|<center>로그인 페이지</center>|<center>회원가입 페이지</center>|<cetner>게임 페이지</center>
-|:------------------------:|:---------------------------:|:----------------------------:|:----------------------------:|
-|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/959d1c78-47cf-4e49-9981-a92dae6a251a">|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/8529aafa-f3a0-408a-8d2b-8149ae45953b">|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/f5c0ec5d-c798-43e2-9856-eac4d969584b">|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/4b18d467-b073-4a3b-a8a0-69ceff8a704a">
+|<center>메인 페이지</center>|
+|:------------------------:|
+|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/959d1c78-47cf-4e49-9981-a92dae6a251a">|
+
+
+
+
+
 
 
 

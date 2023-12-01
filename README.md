@@ -131,6 +131,15 @@
 2. 이메일 규칙 ('@') 구분이 되어야 이메일 회원가입 가능
 
 - 회원가입된 계정은 비밀번호가 Spring Security의 BCryptoPasswordEncoder에 의해 암호화되어 DB에 저장이 된다.
+
+<br> <br>
+|<center>게임 페이지</center>|
+|:------------------------:|
+|<img src="https://github.com/MoonGwangHee/MoonGwangHee/assets/94667528/4b534800-082e-4678-a647-fec5f3c58eb8">|
+
+<br>
+
+- 실제 Dot Raid 를 플레이 할 수 있는 페이지 입니다. (로그인 된 회원만 이 페이지를 접근할 수 있습니다.)
   
 
   

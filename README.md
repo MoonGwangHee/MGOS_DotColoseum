@@ -21,7 +21,7 @@
 
 ## Release 🧾
 
-> MGOS 사이트 : <a href="http://mgos-dot.com">http://mgos-dot.com"</a>
+<li>MGOS 사이트 : <a href="http://mgos-dot.com">http://mgos-dot.com"</a></li>
 
 
 - - -

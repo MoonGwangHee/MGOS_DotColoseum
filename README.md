@@ -1,5 +1,5 @@
 # MGOS_DotRaid 🔪
-<mark>MGOS's Game Project : Dot Raid (Web basement)</mark> <br> <br>
+<span style='background-color: #fff5b1'>MGOS's Game Project : Dot Raid (Web basement)</span> <br> <br>
 ![Logo_With_NoBg](https://github.com/MoonGwangHee/MGOS_DotRaid/assets/94667528/2415ac3a-305a-4ebf-a47b-fe87a57656cc)
 
 

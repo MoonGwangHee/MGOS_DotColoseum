@@ -13,7 +13,7 @@
 
 ## Skills 📚
 
-<b>💪 Game Skillsets (Language & Tools) </b>
+> <b>💪 Game Skillsets (Language & Tools) </b>
 
 <b>Langaugae</b> <br> <br>
 <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
@@ -24,7 +24,7 @@
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 <br> <br>
 
-<b>💪 Web Skillsets (Language & Tools ) </b>
+> <b>💪 Web Skillsets (Language & Tools ) </b>
 
 <b>Langaugae</b> <br> <br>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />

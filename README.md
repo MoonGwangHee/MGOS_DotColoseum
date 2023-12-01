@@ -22,7 +22,7 @@
 <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
 <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-<br> <br>
+<br> <br> <br> <br>
 
 > <b>💪 Web Skillsets (Language & Tools ) </b> <br> <br>
 
@@ -43,7 +43,7 @@
 <b> OS </b> <br><br>
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 
-<br> <br>
+<br>
 
 <b> Server </b> <br> <br>
 <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
